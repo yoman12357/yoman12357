@@ -3,9 +3,9 @@
   <p><b>Computer Science & Engineering student at NITK Surathkal | Full-stack Developer | Cybersecurity Enthusiast</b></p>
   
   <p>
-    <a href="www.linkedin.com/in/aryan-bokolia">LinkedIn</a> •
-    <a href="aryanboklia34@gmail.com">Email</a> •
-    <a href="YOUR_PORTFOLIO_URL">Portfolio</a>
+    <a href="https://www.linkedin.com/in/aryan-bokolia">LinkedIn</a> •
+    <a href="mailto:aryanboklia34@gmail.com">Email</a> •
+    <a href="https://github.com/yoman12357">Portfolio</a>
   </p>
 </div>
 
@@ -34,7 +34,7 @@
 ### 🚧 On-going Projects
 * **Darknet Route Tracking Algorithm** – Researching and developing a system to detect malicious activity and track hackers on the Tor network.
 * **Secure Browser** – Currently building a privacy-focused browser application utilizing Electron and Rust.
-* 
+
 ### 🏛️ Campus Involvement
 - **Web Developer** - TEDxNITK Surathkal
 - **Executive Member** - ISTE NITK
@@ -42,14 +42,14 @@
 
 ### 📊 Github Stats
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=dark" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=dark" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=yoman12357&show_icons=true&theme=dark" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yoman12357&layout=compact&theme=dark" alt="Top Languages" />
 </div>
 
 ---
 
 ### 🐍 GitHub Contributions Snake
-![Snake animation](https://github.com/YOUR_USERNAME/YOUR_USERNAME/blob/output/github-contribution-grid-snake.svg)
+![Snake animation](https://raw.githubusercontent.com/yoman12357/yoman12357/output/github-snake-dark.svg)
 
 <div align="center">
   <i>Show some ❤️ by starring some of the repositories!</i>
