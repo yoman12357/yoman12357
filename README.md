@@ -7,7 +7,9 @@
 
 [LinkedIn](https://www.linkedin.com/in/aryan-bokolia) • 
 [Email](mailto:aryanboklia34@gmail.com) • 
-[GitHub](https://github.com/yoman12357)
+[GitHub](https://github.com/yoman12357)• 
+[My Portfolio](https://myportfolio-navy-rho.vercel.app/)
+
 
 ---
 
@@ -62,22 +64,14 @@ Goal: Hardened browsing with sandboxing and tracking resistance.
 
 ## 🏛️ Campus Involvement
 
-- Web Developer — **TEDxNITK Surathkal**
+- Web Developer — **AeroNITK**
 - Executive Member — **ISTE NITK**
-- Member — **AeroNITK**
+- Web Team Member — **TEDxNITK Surathkal**
+
+
 
 ---
 
-## 📊 GitHub Analytics
-
-<div align="center">
-
-<img height="170em" src="https://github-readme-stats.vercel.app/api?username=yoman12357&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=1800" />
-<img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yoman12357&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=1800" />
-
-</div>
-
----
 
 ## 🔥 Contribution Graph
 
@@ -94,5 +88,6 @@ Goal: Hardened browsing with sandboxing and tracking resistance.
 ### ⭐ "Security is not a feature. It is a mindset."
 
 </div>
+
 
 
