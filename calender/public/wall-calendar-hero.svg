@@ -1,0 +1,193 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 800 960"
+  fill="none"
+>
+  <defs>
+    <linearGradient id="wall" x1="88" y1="48" x2="712" y2="912" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F0E9" />
+      <stop offset="1" stop-color="#E8E1D8" />
+    </linearGradient>
+    <linearGradient id="paper" x1="204" y1="122" x2="560" y2="842" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDF8" />
+      <stop offset="1" stop-color="#F5F0E8" />
+    </linearGradient>
+    <linearGradient id="header" x1="202" y1="124" x2="550" y2="228" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D6C2AB" />
+      <stop offset="1" stop-color="#BA9F81" />
+    </linearGradient>
+    <linearGradient id="photoSky" x1="240" y1="248" x2="560" y2="486" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DBE7F2" />
+      <stop offset="1" stop-color="#F5E9D9" />
+    </linearGradient>
+    <filter id="paperShadow" x="110" y="78" width="580" height="810" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix
+        in="SourceAlpha"
+        type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        result="hardAlpha"
+      />
+      <feOffset dx="10" dy="18" />
+      <feGaussianBlur stdDeviation="18" />
+      <feComposite in2="hardAlpha" operator="out" />
+      <feColorMatrix
+        type="matrix"
+        values="0 0 0 0 0.294118 0 0 0 0 0.243137 0 0 0 0 0.196078 0 0 0 0.18 0"
+      />
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_hero" />
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow_hero" result="shape" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="960" fill="url(#wall)" />
+  <path
+    d="M0 708C120 650 255 636 408 664C573 694 693 684 800 620V960H0V708Z"
+    fill="#DDD1C4"
+    opacity="0.55"
+  />
+  <ellipse cx="412" cy="844" rx="234" ry="32" fill="#CDBCA8" opacity="0.45" />
+
+  <g filter="url(#paperShadow)">
+    <rect x="160" y="110" width="480" height="740" rx="36" fill="url(#paper)" />
+    <rect x="160" y="110" width="480" height="132" rx="36" fill="url(#header)" />
+    <rect x="160" y="202" width="480" height="40" fill="url(#header)" />
+  </g>
+
+  <rect x="246" y="84" width="58" height="44" rx="22" fill="#FBF7F1" stroke="#B79F86" stroke-width="8" />
+  <rect x="496" y="84" width="58" height="44" rx="22" fill="#FBF7F1" stroke="#B79F86" stroke-width="8" />
+  <circle cx="275" cy="130" r="7" fill="#8E765E" />
+  <circle cx="525" cy="130" r="7" fill="#8E765E" />
+
+  <text
+    x="400"
+    y="166"
+    text-anchor="middle"
+    fill="#FFFFFF"
+    font-size="20"
+    font-family="Arial, sans-serif"
+    letter-spacing="6"
+  >
+    APRIL
+  </text>
+  <text
+    x="400"
+    y="214"
+    text-anchor="middle"
+    fill="#FFFFFF"
+    font-size="54"
+    font-family="Arial, sans-serif"
+    font-weight="700"
+  >
+    2026
+  </text>
+
+  <rect x="206" y="268" width="388" height="228" rx="28" fill="url(#photoSky)" />
+  <circle cx="510" cy="312" r="32" fill="#FFF4D9" />
+  <path d="M206 430C246 390 280 386 320 414C360 442 390 444 430 412C470 380 510 382 594 446V496H206V430Z" fill="#8B9E8B" />
+  <path d="M206 454C244 430 276 430 314 454C346 474 388 478 432 452C476 426 528 430 594 480V496H206V454Z" fill="#53685C" />
+  <path d="M256 494L326 382L390 466L444 408L544 494H256Z" fill="#E6DED0" opacity="0.92" />
+
+  <g fill="#8B7A67" font-family="Arial, sans-serif" font-size="15" text-anchor="middle">
+    <text x="235" y="548">S</text>
+    <text x="288" y="548">M</text>
+    <text x="341" y="548">T</text>
+    <text x="394" y="548">W</text>
+    <text x="447" y="548">T</text>
+    <text x="500" y="548">F</text>
+    <text x="553" y="548">S</text>
+  </g>
+
+  <g>
+    <rect x="218" y="574" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="271" y="574" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="324" y="574" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="377" y="574" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="430" y="574" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="483" y="574" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="536" y="574" width="34" height="34" rx="12" fill="#F2ECE4" />
+
+    <rect x="218" y="624" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="271" y="624" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="324" y="624" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="377" y="624" width="34" height="34" rx="12" fill="#D2B395" />
+    <rect x="430" y="624" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="483" y="624" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="536" y="624" width="34" height="34" rx="12" fill="#F2ECE4" />
+
+    <rect x="218" y="674" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="271" y="674" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="324" y="674" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="377" y="674" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="430" y="674" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="483" y="674" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="536" y="674" width="34" height="34" rx="12" fill="#F2ECE4" />
+
+    <rect x="218" y="724" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="271" y="724" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="324" y="724" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="377" y="724" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="430" y="724" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="483" y="724" width="34" height="34" rx="12" fill="#F2ECE4" />
+    <rect x="536" y="724" width="34" height="34" rx="12" fill="#F2ECE4" />
+  </g>
+
+  <g fill="#6B5D4D" font-family="Arial, sans-serif" font-size="13" text-anchor="middle">
+    <text x="235" y="596">1</text>
+    <text x="288" y="596">2</text>
+    <text x="341" y="596">3</text>
+    <text x="394" y="596">4</text>
+    <text x="447" y="596">5</text>
+    <text x="500" y="596">6</text>
+    <text x="553" y="596">7</text>
+
+    <text x="235" y="646">8</text>
+    <text x="288" y="646">9</text>
+    <text x="341" y="646">10</text>
+    <text x="394" y="646" fill="#FFFFFF" font-weight="700">11</text>
+    <text x="447" y="646">12</text>
+    <text x="500" y="646">13</text>
+    <text x="553" y="646">14</text>
+
+    <text x="235" y="696">15</text>
+    <text x="288" y="696">16</text>
+    <text x="341" y="696">17</text>
+    <text x="394" y="696">18</text>
+    <text x="447" y="696">19</text>
+    <text x="500" y="696">20</text>
+    <text x="553" y="696">21</text>
+
+    <text x="235" y="746">22</text>
+    <text x="288" y="746">23</text>
+    <text x="341" y="746">24</text>
+    <text x="394" y="746">25</text>
+    <text x="447" y="746">26</text>
+    <text x="500" y="746">27</text>
+    <text x="553" y="746">28</text>
+  </g>
+
+  <path
+    d="M116 706C146 658 184 646 230 672"
+    stroke="#8C9A7D"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
+  <path
+    d="M114 754C142 710 174 694 212 712"
+    stroke="#8C9A7D"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
+  <path
+    d="M684 734C650 680 618 668 582 688"
+    stroke="#8C9A7D"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
+  <path
+    d="M696 786C660 734 626 720 596 736"
+    stroke="#8C9A7D"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
+</svg>

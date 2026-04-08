@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Wall Calendar Component Report</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 0.65in;
+      }
+
+      :root {
+        color-scheme: light;
+        --bg: #f5f3ef;
+        --panel: #ffffff;
+        --panel-soft: #f8f8f6;
+        --text: #1f2937;
+        --muted: #64748b;
+        --line: #d7dde5;
+        --accent: #1f766b;
+        --accent-soft: rgba(31, 118, 107, 0.1);
+        --accent-strong: #0f172a;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: linear-gradient(180deg, #f7f5f1 0%, #f2efea 100%);
+        color: var(--text);
+        font-family: "Segoe UI", Arial, sans-serif;
+        line-height: 1.55;
+      }
+
+      main {
+        max-width: 8.1in;
+        margin: 0 auto;
+      }
+
+      .hero {
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(250, 250, 248, 0.96));
+        box-shadow: 0 18px 48px rgba(15, 23, 42, 0.08);
+        overflow: hidden;
+      }
+
+      .hero-header {
+        padding: 28px 30px 22px;
+        background:
+          radial-gradient(circle at top right, rgba(31, 118, 107, 0.12), transparent 32%),
+          linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(247, 247, 244, 0.94));
+      }
+
+      .eyebrow {
+        display: inline-block;
+        padding: 7px 12px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 16px 0 10px;
+        font-size: 34px;
+        line-height: 1.1;
+        letter-spacing: -0.04em;
+      }
+
+      .lede {
+        margin: 0;
+        color: var(--muted);
+        font-size: 15px;
+        max-width: 44rem;
+      }
+
+      .screenshot-wrap {
+        padding: 0 30px 30px;
+      }
+
+      .screenshot {
+        width: 100%;
+        display: block;
+        border-radius: 24px;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
+      }
+
+      .visual-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .visual-stack {
+        display: grid;
+        gap: 16px;
+        margin-top: 16px;
+      }
+
+      .visual-card {
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.76);
+        padding: 14px;
+      }
+
+      .visual-card figcaption {
+        margin-top: 10px;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .section {
+        margin-top: 26px;
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 24px 26px;
+      }
+
+      h2 {
+        margin: 0 0 14px;
+        font-size: 21px;
+        letter-spacing: -0.03em;
+      }
+
+      h3 {
+        margin: 18px 0 10px;
+        font-size: 15px;
+        color: var(--accent-strong);
+        letter-spacing: -0.02em;
+      }
+
+      p {
+        margin: 0 0 10px;
+        color: var(--text);
+        font-size: 14px;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      li {
+        margin: 0 0 8px;
+        color: var(--text);
+        font-size: 14px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .feature-card {
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: var(--panel-soft);
+        padding: 16px 18px;
+      }
+
+      .accent-note {
+        margin-top: 16px;
+        border-radius: 18px;
+        background: var(--accent-soft);
+        border: 1px solid rgba(31, 118, 107, 0.18);
+        padding: 16px 18px;
+      }
+
+      .footer-note {
+        margin-top: 24px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .tech-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0;
+        list-style: none;
+      }
+
+      .tech-list li {
+        margin: 0;
+        padding: 8px 12px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: #fff;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--accent-strong);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="hero-header">
+          <span class="eyebrow">Frontend Engineering Challenge Report</span>
+          <h1>Interactive Wall Calendar Component</h1>
+          <p class="lede">
+            An enhanced version of the original wall calendar challenge, expanded with
+            production-minded UX, advanced interactivity, accessibility support, responsive
+            behavior, persistent notes, reminders, and premium interface polish.
+          </p>
+        </div>
+        <div class="screenshot-wrap">
+          <div class="visual-grid">
+            <figure class="visual-card">
+              <img
+                class="screenshot"
+                src="../public/report/hero-section.png"
+                alt="Hero section of the Interactive Wall Calendar Component"
+              />
+              <figcaption>
+                Hero composition with wall-calendar styling, editorial framing, and seasonal accenting.
+              </figcaption>
+            </figure>
+
+            <figure class="visual-card">
+              <img
+                class="screenshot"
+                src="../public/report/month-section.png"
+                alt="Month view showing selected date range in the calendar"
+              />
+              <figcaption>
+                Month view with a highlighted date range, quick actions, and important-date markers.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="visual-stack">
+            <figure class="visual-card">
+              <img
+                class="screenshot"
+                src="../public/report/notes-section.png"
+                alt="Notes panel tied to the selected date range"
+              />
+              <figcaption>
+                Notes workflow connected to the active range with clear save and empty-state handling.
+              </figcaption>
+            </figure>
+
+            <figure class="visual-card">
+              <img
+                class="screenshot"
+                src="../public/report/reminders-section.png"
+                alt="Reminders panel with timezone and notification status"
+              />
+              <figcaption>
+                Reminder workflow with timezone-aware scheduling, permission state, and upcoming reminder visibility.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Project Summary</h2>
+        <p>
+          This project began as a UI-focused calendar brief and was intentionally pushed into a
+          richer product-style experience. The result is a wall-calendar-inspired month view that
+          supports interaction patterns users expect from modern planning tools while keeping the
+          design clean, balanced, and recruiter-ready.
+        </p>
+        <div class="accent-note">
+          <strong>Focus:</strong> UX quality, motion restraint, accessibility, responsive layout
+          design, and real-world usability beyond the original challenge scope.
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Implemented Features</h2>
+        <div class="grid">
+          <div class="feature-card">
+            <h3>Calendar and Range Selection</h3>
+            <ul>
+              <li>Wall calendar layout with hero image and month-view calendar grid</li>
+              <li>Current month display with 7-column day grid and current-day highlight</li>
+              <li>Click-based and drag-to-select date range interaction</li>
+              <li>Clear start, end, and in-range highlighting</li>
+              <li>Quick actions for Today, Clear Selection, Select This Week, and month navigation</li>
+              <li>Smooth month transition animation with slide and fade behavior</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <h3>Notes and Reminders</h3>
+            <ul>
+              <li>Notes system with add, edit, delete, and localStorage persistence</li>
+              <li>Reminder creation for a selected date or date range</li>
+              <li>Reminder message support and upcoming reminders list</li>
+              <li>Browser notifications with in-app alert fallback</li>
+              <li>Timezone-aware reminder display and scheduling</li>
+              <li>Calendar indicators for notes and reminders</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <h3>UX, Visual Design, and Motion</h3>
+            <ul>
+              <li>Responsive design for desktop, tablet, and mobile layouts</li>
+              <li>Light and dark mode with saved preference</li>
+              <li>Dynamic accent colors influenced by the hero image</li>
+              <li>Framer Motion transitions for load, selection, panels, and month changes</li>
+              <li>Sticky desktop notes workflow and smoother panel hierarchy</li>
+              <li>Hover states, focus states, toasts, and premium feedback styling</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <h3>Accessibility and Production Readiness</h3>
+            <ul>
+              <li>Keyboard date navigation with arrow keys, Enter, and Space support</li>
+              <li>Visible focus treatment and screen-reader-friendly labels</li>
+              <li>High-contrast styling and dark mode readability improvements</li>
+              <li>Edge case handling for reversed ranges and same-day selections</li>
+              <li>Validation for empty notes, incomplete reminders, and permission denial</li>
+              <li>Client-side persistence with maintainable TypeScript-based architecture</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Design Decisions</h2>
+        <h3>Why the wall calendar concept was chosen</h3>
+        <p>
+          The wall calendar format creates a stronger visual identity than a typical date picker. It
+          feels more editorial, more memorable in a portfolio, and still keeps the month view easy
+          to understand at first glance.
+        </p>
+        <h3>Why localStorage was used instead of a backend</h3>
+        <p>
+          The challenge is frontend-first, so localStorage keeps the project self-contained, easy to
+          review, and functional without requiring authentication, APIs, or cloud infrastructure.
+        </p>
+        <h3>How UX was handled</h3>
+        <p>
+          The interface was refined around real interaction quality: drag selection, quick actions,
+          mobile touch targets, visible feedback, accessibility support, and clear fallbacks when
+          browser permissions are limited.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Tech Stack</h2>
+        <ul class="tech-list">
+          <li>Next.js 16 App Router</li>
+          <li>TypeScript</li>
+          <li>Tailwind CSS</li>
+          <li>Framer Motion</li>
+          <li>date-fns</li>
+          <li>localStorage</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Future Improvements</h2>
+        <ul>
+          <li>Backend integration for cloud persistence and cross-device sync</li>
+          <li>User authentication and personalized calendars</li>
+          <li>Cloud-based reminders with reliable background delivery</li>
+          <li>Multi-user collaboration and shared planning features</li>
+        </ul>
+        <p class="footer-note">
+          Prepared as an enhanced submission package to show strong frontend engineering judgment,
+          not only feature completion.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

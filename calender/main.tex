@@ -1,0 +1,278 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{parskip}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue!60!black,
+  pdftitle={Interactive Wall Calendar Component Report},
+  pdfauthor={Aryan Bokolia}
+}
+
+\definecolor{reportnavy}{HTML}{1F2937}
+\definecolor{reportteal}{HTML}{1F766B}
+\definecolor{reportsoft}{HTML}{EFF8F6}
+\definecolor{reportline}{HTML}{D7DDE5}
+\definecolor{reportmuted}{HTML}{64748B}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Interactive Wall Calendar Component}
+\fancyhead[R]{Official Submission Report}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{14pt}
+
+\titleformat{\section}
+  {\Large\bfseries\color{reportnavy}}
+  {\thesection}{0.6em}{}
+
+\titleformat{\subsection}
+  {\normalsize\bfseries\color{reportnavy}}
+  {\thesubsection}{0.6em}{}
+
+\newcommand{\detailrow}[2]{\textbf{#1} & #2 \\}
+
+\newcommand{\reportimage}[2][0.98\linewidth]{%
+  \IfFileExists{#2}{%
+    \includegraphics[width=#1]{#2}%
+  }{%
+    \fbox{%
+      \parbox[c][5.4cm][c]{0.92\linewidth}{%
+        \centering
+        \textbf{Image not uploaded yet} \\[0.5em]
+        Upload this file to Overleaf: \texttt{#2}
+      }%
+    }%
+  }%
+}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+% Overleaf note:
+% Upload this file along with the following image assets for the final version:
+% public/report/hero-section.png
+% public/report/month-section.png
+% public/report/notes-section.png
+% public/report/reminders-section.png
+
+\begin{titlepage}
+  \centering
+
+  {\Large\textsc{National Institute of Technology Karnataka, Surathkal}\par}
+  \vspace{0.5cm}
+  {\large Department of Computer Science and Engineering\par}
+  \vspace{1.4cm}
+
+  {\Huge\bfseries Interactive Wall Calendar Component\par}
+  \vspace{0.4cm}
+  {\Large Enhanced Frontend Engineering Challenge Submission\par}
+  \vspace{1.2cm}
+
+  \begin{tcolorbox}[
+    colback=reportsoft,
+    colframe=reportline,
+    boxrule=0.6pt,
+    arc=4mm,
+    width=0.92\textwidth
+  ]
+    \centering
+    \textbf{Submission Summary} \\[0.5em]
+    This report documents an enhanced version of the original frontend engineering challenge.
+    The final project extends the brief into a production-minded interactive calendar experience
+    with polished UX, responsive design, accessibility improvements, reminders, notes, and
+    refined interface behavior.
+  \end{tcolorbox}
+
+  \vfill
+
+  \renewcommand{\arraystretch}{1.35}
+  \begin{tabularx}{0.9\textwidth}{>{\raggedright\arraybackslash}p{0.28\textwidth}X}
+    \detailrow{Submitted By}{Aryan Bokolia}
+    \detailrow{Student ID}{241CS111}
+    \detailrow{Program}{B.Tech. in Computer Science and Engineering}
+    \detailrow{Institution}{National Institute of Technology Karnataka, Surathkal}
+    \detailrow{Location}{Karnataka, India}
+    \detailrow{Submission Type}{Official Frontend Engineering Challenge Report}
+    \detailrow{Project Stack}{Next.js, TypeScript, Tailwind CSS, Framer Motion, date-fns}
+    \detailrow{Submission Date}{\today}
+  \end{tabularx}
+
+  \vfill
+\end{titlepage}
+
+\clearpage
+\pagenumbering{arabic}
+
+\section{Project Overview}
+
+This project began as a frontend engineering challenge to build an interactive wall calendar
+component. The implementation was deliberately extended beyond the base requirements to
+demonstrate stronger frontend engineering judgment across interaction design, accessibility,
+responsiveness, visual polish, and real-world usability.
+
+The final product combines a wall-calendar-inspired hero layout, an interactive month grid,
+a persistent notes workflow, reminder scheduling, motion design, theme support, and robust
+edge-case handling. The goal was not only to complete the assignment, but to produce a
+submission that feels product-ready and professionally presented.
+
+\section{Submission Context and Objectives}
+
+\begin{itemize}[leftmargin=1.4em]
+  \item Build a visually distinctive wall-calendar interface rather than a generic calendar widget.
+  \item Implement date range selection with intuitive interaction patterns, including drag selection.
+  \item Add practical product features such as notes, reminders, notifications, and quick actions.
+  \item Ensure responsive behavior across desktop and mobile form factors.
+  \item Improve accessibility through keyboard navigation, visible focus states, and readable contrast.
+  \item Present the project as an official, recruiter-ready engineering submission.
+\end{itemize}
+
+\section{Interface Showcase}
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[t]{0.48\textwidth}
+    \centering
+    \reportimage{public/report/hero-section.png}
+    \caption{Hero section with wall-calendar styling and editorial framing.}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.48\textwidth}
+    \centering
+    \reportimage{public/report/month-section.png}
+    \caption{Month view with selected range, quick actions, and date markers.}
+  \end{subfigure}
+  \caption{Primary calendar experience.}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \reportimage[0.95\linewidth]{public/report/notes-section.png}
+  \caption{Notes workflow tied to the currently selected date range.}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \reportimage[0.95\linewidth]{public/report/reminders-section.png}
+  \caption{Reminders workflow with timezone-aware targeting and notification status.}
+\end{figure}
+
+\section{Implemented Features}
+
+\subsection{Core Features}
+
+\begin{itemize}[leftmargin=1.4em]
+  \item Wall calendar layout with a hero image and structured month-view interface.
+  \item Current month display using a seven-column calendar grid.
+  \item Highlighting for the current day and selected range.
+  \item Fully responsive layout for desktop, tablet, and mobile devices.
+\end{itemize}
+
+\subsection{Interaction and Productivity Features}
+
+\begin{itemize}[leftmargin=1.4em]
+  \item Click-based date range selection.
+  \item Drag-to-select interaction inspired by booking and scheduling platforms.
+  \item Quick actions including Today, Clear Selection, Select This Week, and month navigation.
+  \item Notes system with create, edit, delete, and localStorage persistence.
+  \item Reminders with browser notifications and in-app fallback alerts.
+  \item Timezone-aware reminder labeling and scheduling behavior.
+\end{itemize}
+
+\subsection{Visual and UX Enhancements}
+
+\begin{itemize}[leftmargin=1.4em]
+  \item Framer Motion animations for load states, date selection, and month transitions.
+  \item Light and dark mode support with persisted user preference.
+  \item Dynamic accent styling influenced by the hero image.
+  \item Important-date indicators for today, notes, reminders, and special dates.
+  \item Toast-style feedback for note and reminder actions.
+\end{itemize}
+
+\subsection{Accessibility and Edge-Case Handling}
+
+\begin{itemize}[leftmargin=1.4em]
+  \item Keyboard navigation using arrow keys, Enter, and Space.
+  \item Visible focus states and improved screen-reader clarity.
+  \item Validation for invalid selections, empty note content, and incomplete reminder input.
+  \item Graceful behavior for reversed ranges, same-day selection, and denied notification permissions.
+\end{itemize}
+
+\section{Design and Engineering Decisions}
+
+\subsection{Why the wall calendar concept was chosen}
+
+The wall calendar format gives the project a stronger identity than a standard date picker.
+It creates a more memorable submission and makes the interface feel like a designed product
+rather than a default utility component.
+
+\subsection{Why localStorage was used}
+
+The challenge was frontend-focused, so localStorage was selected to keep the application
+self-contained, easy to run, and simple for reviewers to evaluate without needing backend
+infrastructure, authentication, or cloud services.
+
+\subsection{How UX was approached}
+
+The interface was refined with an emphasis on smooth interaction flow, reduced friction, clear
+feedback, and realistic usage patterns. This includes responsive spacing, drag selection, sticky
+or full-width workflow sections, action feedback, mobile-friendly controls, and restrained motion.
+
+\section{Technology Stack}
+
+\begin{tcolorbox}[
+  colback=reportsoft,
+  colframe=reportline,
+  boxrule=0.6pt,
+  arc=3mm
+]
+\begin{itemize}[leftmargin=1.4em]
+  \item Next.js 16 with App Router
+  \item TypeScript
+  \item Tailwind CSS
+  \item Framer Motion
+  \item date-fns
+  \item localStorage for client-side persistence
+\end{itemize}
+\end{tcolorbox}
+
+\section{Future Improvements}
+
+\begin{itemize}[leftmargin=1.4em]
+  \item Backend integration for cloud persistence and cross-device synchronization.
+  \item User authentication and personalized calendar state.
+  \item Cloud-based reminders with more reliable background delivery.
+  \item Shared planning, collaboration, and multi-user calendar workflows.
+\end{itemize}
+
+\section{Conclusion}
+
+This submission represents an enhanced and more production-minded interpretation of the original
+frontend engineering challenge. The project demonstrates not only visual implementation skill,
+but also thoughtful UX decisions, accessibility improvements, maintainable architecture, and
+practical product-oriented feature design.
+
+Overall, the work reflects a strong frontend engineering focus with attention to usability,
+interaction quality, and professional presentation.
+
+\end{document}
