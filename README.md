@@ -160,11 +160,12 @@ A privacy-focused browser in development, built around safer defaults, stronger 
 
 ## Campus Involvement
 
-| Role | Organization |
-|:---:|:---:|
-| Web Developer | TEDxNITK Surathkal |
-| Executive Member | ISTE NITK |
-| Member | AeroNITK |
+|         Role          |    Organization    |
+| :-------------------: | :----------------: |
+| Crypt SIG Coordinator |     ISTE NITK      |
+|     Web Dev Lead      |      AeroNITK      |
+|     Web Developer     | TEDxNITK Surathkal |
+|   Executive Member    |     Yoga Club      |
 
 <br/>
 
