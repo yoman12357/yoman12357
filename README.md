@@ -96,6 +96,18 @@ fun_fact: I believe security is not a feature — it's a mindset 🛡️
 ![Tor](https://img.shields.io/badge/Tor_Network-7D4698?style=for-the-badge&logo=tor-browser&logoColor=white)
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
 ![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![Tailwind_CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=for-the-badge&logo=socketdotio&logoColor=white)
+![eBPF](https://img.shields.io/badge/eBPF-FF6B35?style=for-the-badge&logo=linux&logoColor=white)
+![XDP](https://img.shields.io/badge/XDP-0F172A?style=for-the-badge&logo=linux&logoColor=white)
+![Mininet](https://img.shields.io/badge/Mininet-1D4ED8?style=for-the-badge&logo=databricks&logoColor=white)
+![Verilog](https://img.shields.io/badge/Verilog-8B5CF6?style=for-the-badge&logo=siemens&logoColor=white)
+![Logisim](https://img.shields.io/badge/Logisim-E11D48?style=for-the-badge&logo=buffer&logoColor=white)
 
 </div>
 
@@ -165,6 +177,24 @@ Privacy-focused browser built with **Electron + Rust**.
 
 <br/>
 
+## 🧪 More Projects From My Resume
+
+### 🌐 Traffic Correlation Research Platform
+
+Built a full-stack cybersecurity research platform for traffic correlation analysis on anonymous networks, supporting simulation, replay, PCAP, and live capture workflows.  
+Added a Python analysis engine for feature extraction, probabilistic correlation scoring, and region estimation across 100+ session records, along with a real-time Next.js dashboard for 5+ concurrent workflows.
+
+**Tech:** `Python` `Node.js` `Express.js` `Next.js` `SQLite` `WebSockets`
+
+### 🛡️ eBPF-XDP Network Slicing Firewall
+
+Implemented a kernel-level XDP packet-processing firewall inspired by IEEE 6G network slicing research.  
+Classified IPv4, TCP, UDP, ICMP, VXLAN, and GTP-U traffic into application-specific slices and designed 9 BPF maps for high-speed, in-kernel enforcement using threat-intelligence-backed filtering.
+
+**Tech:** `C` `eBPF/XDP` `Python` `libbpf` `Mininet` `Linux Kernel Programming`
+
+<br/>
+
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 ## 🏛️ Campus Involvement
@@ -178,6 +208,40 @@ Privacy-focused browser built with **Electron + Rust**.
 | ✈️ **Member** | AeroNITK |
 
 </div>
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
+## 🎓 Education & Resume Highlights
+
+```yaml
+institute: National Institute of Technology Karnataka (NITK), Surathkal
+degree: B.Tech in Computer Science and Engineering
+duration: Aug 2024 - Present
+location: Mangaluru, India
+cgpa: 7.43
+academic_focus:
+  - Data Structures & Algorithms
+  - Digital Logic
+  - Linear Algebra
+```
+
+### 💼 Leadership & Experience
+
+- **Crypt SIG Coordinator**, ISTE NITK (Apr 2026 - Present) - leading cybersecurity workshops, CTF training, and technical sessions for 200+ students.
+- **Executive Member - Technical Team**, ISTE NITK (Sep 2025 - Present) - coordinating technical initiatives around cryptography, network security, and emerging technologies.
+- **Web Dev Lead**, Team AeroNITK (Apr 2026 - Present) - mentoring junior developers in React.js, responsive design, and modern frontend practices.
+- **Web Team Member**, Team AeroNITK (Apr 2025 - Present) - built and deployed the official AeroNITK website serving 200+ club members.
+
+### 🏆 Achievements
+
+- Secured **1st Place** in **WEC NITK Capture The Flag (CTF)** among 20+ participating teams.
+- Implemented an **IEEE-published eBPF-XDP network slicing architecture** as a functional kernel-level firewall prototype.
+
+### 🧠 Core Strengths
+
+`Data Structures` `Algorithms` `Cybersecurity` `Network Security` `Problem Solving` `Team Leadership` `REST APIs` `Full-Stack Development`
 
 <br/>
 
